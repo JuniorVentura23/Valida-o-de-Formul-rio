@@ -14,52 +14,87 @@
 
 </head>
 <body>
+
+    <!------------- Início Formulário ------------->
+
     <div class="container">
-        <h1 class="container__title">Formulary</h1>
         
-        <div class="container__form">
-            <form action="#" method="POST">
-                <input type="text" name="nome" required placeholder="Digite seu nome">
-                <input type="email" name="email" placeholder="Digite seu email">
-                <input type="password" name="senha" placeholder="Senha">
-                <input type="password" name="senha2" placeholder="Repita sua senha">
-                <textarea name="sobre" id="sobre" placeholder="Fale um pouco sobre você..."></textarea>
+        <div class="container__content">
+            <div class="container__img">
+                <img src="assets/images/dev.png" alt="Developer">
+            </div>
+            
+            <div class="container__form">
+                <h1 class="container__title">Formulary</h1>
+                <form action="#" method="POST">
+                    <div class="container__formName">
+                        <input class="container__input" type="text" name="nome" placeholder="Digite seu nome">
+                        <span class="span__required">Nome deve conter no mínimo 3 caracteres.</span>
+                    </div>
+                   
+                    <div class="container__formEmail">
+                        <input class="container__input" type="email" name="email" placeholder="Digite seu email">
+                        <span class="span__required">Digite um email válido</span>
+                    </div>
+                    
+                    <div class="container__formPassword">
+                        <input class="container__input" type="password" name="senha" placeholder="Senha">
+                        <span class="span__required">Digite uma senha com no mínimo 8 caracteres. </span>
+                    </div>
 
-                <div class="container__sexo">
-                    <span>Sexo</span>
-                    <div class="container__masc">
-                        <input type="radio" name="sexo" id="">
-                        <label for="masc">Masculine</label>
-                    </div>
-                    <div class="container__femi">
-                        <input type="radio" name="sexo" id="">
-                        <label for="femi">Feminine</label>
-                    </div>
-                    <div class="container__other">
-                        <input type="radio" name="sexo" id="">
-                        <label for="femi">Other</label>
+                    <div class="container__formPasswordConf">
+                        <input class="container__input" type="password" name="senha2" placeholder="Repita sua senha">
+                        <span class="span__required">Senhas devem ser compatíveis.</span>
                     </div>                    
-                </div>
+                   
+                    <textarea name="sobre" id="sobre" placeholder="Fale um pouco sobre você..."></textarea>                        
+                    
 
-                <div class="container__experience">
-                    <span>What your experiences?</span>
-                    <div class="container__html">
-                        <input type="checkbox" name="html" id="html">
-                        <label for="html">HTML</label>
+                    
+                    
+                    <span class="container__spanSexo">Sexo</span>
+                    <div class="container__sexo">                        
+                        <div class="container__masc">
+                            <input type="radio" name="sexo" id="masc">
+                            <label for="masc">Masculine</label>
+                        </div>
+                        <div class="container__femi">
+                            <input type="radio" name="sexo" id="femi">
+                            <label for="femi">Feminine</label>
+                        </div>
+                        <div class="container__other">
+                            <input type="radio" name="sexo" id="other">
+                            <label for="other">Other</label>
+                        </div>                    
                     </div>
-                    <div class="container__css">
-                        <input type="checkbox" name="css" id="css">
-                        <label for="css">CSS</label>
+                    
+                    <span class="container__spanExp">What your experiences?</span>
+                    <div class="container__experience">
+                        
+                        <div class="container__html">
+                            <input type="checkbox" name="html" id="html">
+                            <label for="html">HTML</label>
+                        </div>
+                        <div class="container__css">
+                            <input type="checkbox" name="css" id="css">
+                            <label for="css">CSS</label>
+                        </div>
+                        <div class="container__javascript">
+                            <input type="checkbox" name="js" id="js">
+                            <label for="js">JavaScript</label>
+                        </div>
                     </div>
-                    <div class="container__javascript">
-                        <input type="checkbox" name="js" id="js">
-                        <label for="js">JavaScript</label>
-                    </div>
-                </div>
-            </form>
-        </div>
+
+                    <button class="btn" type="submit">Salvar</button>
+                </form>
+                
+            </div>
+        </div>       
+
         
     </div>
+
+    <!------------- Fim Formulário ------------->
 
     <script type="text/javascript" src="assets/JS/script.js" ></script>    
 </body>
