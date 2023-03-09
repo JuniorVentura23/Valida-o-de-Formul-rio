@@ -64,11 +64,12 @@ body {
     padding:10px;
     margin:7px 0;
     border-radius:5px;
-    border:none;
+    border:2px solid #D44A00;
     background-color: #D44A00;
     color:#fff;
     font-size: 16px;
     transition: 0.3s;
+    outline:none;
 }
 textarea {
     width:100%;
@@ -76,7 +77,7 @@ textarea {
     resize:none;
 }
 .container__input:focus, textarea:focus {
-    outline: 2px solid #fc8e52;   
+    border-color:#fc8e52;   
 }
 .container__input::placeholder, textarea::placeholder {
     color:#fc8e52;

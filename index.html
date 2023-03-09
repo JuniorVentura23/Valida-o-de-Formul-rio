@@ -26,29 +26,28 @@
             
             <div class="container__form">
                 <h1 class="container__title">Formulary</h1>
-                <form action="#" method="POST">
+                <form action="" method="POST" id="form">
                     <div class="container__formName">
-                        <input class="container__input" type="text" name="nome" placeholder="Digite seu nome">
+                        <input class="container__input required" oninput="nameValidate()" type="text" placeholder="Digite seu nome" >
                         <span class="span__required">Nome deve conter no mínimo 3 caracteres.</span>
                     </div>
                    
                     <div class="container__formEmail">
-                        <input class="container__input" type="email" name="email" placeholder="Digite seu email">
+                        <input class="container__input required" oninput="emailValidate()" type="email"  placeholder="Digite seu email">
                         <span class="span__required">Digite um email válido</span>
                     </div>
                     
                     <div class="container__formPassword">
-                        <input class="container__input" type="password" name="senha" placeholder="Senha">
+                        <input class="container__input required" type="password" oninput="mainSenhaValidate()"  placeholder="Senha">
                         <span class="span__required">Digite uma senha com no mínimo 8 caracteres. </span>
                     </div>
 
                     <div class="container__formPasswordConf">
-                        <input class="container__input" type="password" name="senha2" placeholder="Repita sua senha">
+                        <input class="container__input required" oninput="confirmarSenha()" type="password"  placeholder="Repita sua senha">
                         <span class="span__required">Senhas devem ser compatíveis.</span>
                     </div>                    
                    
-                    <textarea name="sobre" id="sobre" placeholder="Fale um pouco sobre você..."></textarea>                        
-                    
+                    <textarea name="sobre" id="sobre" placeholder="Fale um pouco sobre você..."></textarea>      
 
                     
                     
@@ -85,7 +84,7 @@
                         </div>
                     </div>
 
-                    <button class="btn" type="submit">Salvar</button>
+                    <button class="btn" type="submit">Enviar</button>
                 </form>
                 
             </div>
@@ -96,6 +95,7 @@
 
     <!------------- Fim Formulário ------------->
 
-    <script type="text/javascript" src="assets/JS/script.js" ></script>    
+        
 </body>
+<script type="text/javascript" src="assets/JS/script.js" ></script>
 </html>
