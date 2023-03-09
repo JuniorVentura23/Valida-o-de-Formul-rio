@@ -11,11 +11,10 @@ form.addEventListener('submit', (event) => {
     nameValidate();
     emailValidate();
     mainSenhaValidate();
-    confirmarSenha();
+    confirmarSenha();    
 })
 
-/*------Se todos os dados estivererem corretamente preenchidos, envie os dados-------*/
-// form.submit();
+
 
 
 /*------Funções para aparecer uma borda e um texto quando não atingir o objetivo-------*/
